@@ -90,7 +90,7 @@ header a:hover{
   background-size: cover;
   background-attachment: local;
   text-align: left;
-  color:  #ffffff;
+  color:  #7b4cd9;
 }
 
 #showcase h1{
@@ -109,7 +109,7 @@ header a:hover{
 #newsletter{
   padding: 20px;
   color: #ffffff;
-  background: #145da0;
+  background: #a997c4;
 }
 
 #newsletter h1{
@@ -159,7 +159,7 @@ table, td {
  td {
   background-color: #b1d4e0;
 }
-a:link {
+/* a:link {
   color: #000000;
   background-color: transparent;
   text-decoration: none;
@@ -169,7 +169,7 @@ a:hover {
   color: #0c2d48;
   background-color: transparent;
   text-decoration: underline;
-}
+} */
 
 /* Sidebar */
 aside#sidebar{
@@ -222,7 +222,7 @@ footer{
   padding: 20px;
   margin-top: 2px;
   color: #ffffff;
-  background-color: #2e8bc0;
+  background-color: #7b4cd9;
   text-align: center;
 }
 
@@ -238,12 +238,56 @@ footer{
   display: table;
 }
 
-.center {
+.centertable {
   margin-left: auto;
   margin-right: auto;
+  font-size: 14px;
 }
 
 table, td, th {
   border: 1px solid;
   padding: 2px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
 }
